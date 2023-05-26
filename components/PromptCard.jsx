@@ -49,6 +49,7 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
             ? '/assets/icons/tick.svg'
             : '/assets/icons/copy.svg'
             } 
+            alt='avatar'
             width={12}
             height={12}
           />
@@ -65,4 +66,4 @@ const PromptCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
   )
 }
 
-export default PromptCard
+export default PromptCard 
