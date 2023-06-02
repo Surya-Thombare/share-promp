@@ -27,7 +27,12 @@ const Feed = () => {
   }
 
   const fetchPosts = async () => {
-    const response = await fetch('/api/prompt', {mode: 'cors'});
+    const response = await fetch('/api/prompt', {
+      mode: 'no-cors',
+      header: {
+        'Access-Control-Allow-Origin':'*',
+      }
+    });
     const data = await response.json();
     setPosts(data)
   }
